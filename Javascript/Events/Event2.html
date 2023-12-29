@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript HTML DOM examples</h2>
+
+    <!-- Element by id -->
+
+    <!-- <p id="first">Finding HTML Elements by Id</p>
+<p id="second">This example one demonstrates the <b>getElementsBySecond</b> method.</p>
+<p id="third">This example two demonstrates the <b>getElementsBythird</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+const element = document.getElementById("second");
+document.getElementById("demo").innerHTML =  element.innerHTML;
+</script> -->
+
+    <!-----ByTagName------------------------------------->
+
+    <!-- <p>Gaurav Saini</p>
+<p>Himanshu</p>
+<p>Vibhor saini</p>
+<p>Sugansha saini</p>
+
+<p id="demo"></p>
+
+<script>
+ const element = document.getElementsByTagName('p');
+ document.getElementById("demo").innerHTML = element[0].innerHTML;
+</script> -->
+
+    <!-- This example finds the element with id="main", and then finds all <p> elements inside "main"-->
+
+    <!-- <div id="main">
+    <p>Finding HTML Elements by Tag Name</p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    <p>Vibhor</p>
+</div>
+    
+    <p id="demo"></p>   
+    <script>
+    const x = document.getElementById("main");
+    const y = x.getElementsByTagName("p");
+    
+    document.getElementById("demo").innerHTML = 
+    'The first paragraph (index 2) inside "main" is: ' + y[2].innerHTML;  
+    </script>-->
+
+    <!-- First div then p tags----------------------------------------->
+
+    <!-- <div id="yuvi">
+      <p>Himanshu</p>
+      <p>VIBHOR</p>
+      <p>ABHISHEK</p>
+      <p id="demo"></p>
+    </div>
+
+    <script>
+      const x = document.getElementById("yuvi");
+
+      
+      document.getElementById("demo").innerHTML = "Hello" + y[1].innerHTML;
+    </script> -->
+
+
+<!-- Finding HTML Elements by Query Selector--------------->
+
+<!-- <p class="intro">Hello World!.</p>
+<p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+const x = document.querySelectorAll("p.intro");
+document.getElementById("demo").innerHTML = 
+'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+</script> -->
+
+<!-- <div class="first">
+<p class="intro">Vibhor1 Hello World!.</p>
+<p class="intro">Vibhor2 Hello World!.</p>
+<p class="intro">Vibhor3 Hello World!.</p>
+<p class="intro">Vibhor4 Hello World!.</p>
+<p class="intro" id="demo"></p>
+</div>
+
+ <script> 
+let x = document.getElementsByClassName("first")[0];
+let y = x.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = "heyy" + y[1].innerHTML;
+</script> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <div class="first">
+      <p class = "intro">Vibhor1 Hello World!.</p>
+      <p class = "intro">Vibhor2 Hello World!.</p>
+    </div>
+    <div class="first">
+      <p class = "intro">Vibhor3 Hello World!.</p>
+      <p class = "intro">Vibhor4 Hello World!.</p>
+      </div>
+    <div id="second">
+      <p class = "intro">Vibhor5 Hello World!.</p>
+      <p class = "intro">Vibhor6 Hello World!.</p>
+      </div>
+
+      <p id="demo"></p>  -->
+      
+    <!-- <script>      -->
+      <!--
+             // ------------------------------]-----------
+
+            // let a = document.getElementsByClassName("first")[0];
+            // let y = a.getElementsByTagName("p");
+            // document.getElementById("demo").innerHTML = "heyy " + y[1].innerHTML;
+            
+            // ---------------------------------------------
+
+            // let x = document.querySelector(".second");
+            // let y = x.getElementsByTagName("p")
+            // document.getElementById("demo").innerHTML = "heyylo " + y[1].innerHTML;
+
+
+            // ----------------------------------------------
+            // let x = document.getElementById("second");
+            // let y = x.getElementsByTagName("p")
+            // document.getElementById("demo").innerHTML = "heyylo " + y[1].innerHTML;
+
+            // ---------------------------------------------
+
+            // let x = document.querySelectorAll(".first");
+            // console.log(x)
+            // let z = Array.from(x);
+            // console.log(z)
+            // let y =z[1].getElementsByTagName("p")
+            // document.getElementById("demo").innerHTML = "heyylo " + z[1].innerHTML;
+
+            // -----------------------------------------------
+
+            // let x = document.getElementsByClassName("first")[0];
+            // let y = x.querySelectorAll("p.intro");
+            // document.getElementById("demo").innerHTML = "heyylo " + y[0].innerHTML;
+    -->
+      
+          <!-- Finding HTML Elements Using <b>document.forms</b>--------------------------------------.-->
+
+<form id="frm1" action="#">
+  First name: <input type="text" name="fname" value="Vibhor"><br>
+  Last name: <input type="text" name="lname" value="Saini"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>These are the values of each element in the form:</p>
+
+<p id="demo"></p>
+
+<script>
+const x = document.forms["frm1"];  //--------------------------
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+   
+  </body>
+</html>
+
+
+ 

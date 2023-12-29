@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+</head>
+    <style>
+    body{
+        background-Color:rgb(3, 3, 3);
+        color:rgb(233, 229, 229);
+    }
+</style>
+
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // function addLanguage(langName) {
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').appendChild(li);
+    //     // here we used queryselector coz we want to add new li with old li elements.
+    //     document.body.appendChild(li); //this is for new li , without old li.
+    // }
+
+    function addLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addLanguage('python');
+    
+
+
+    // Edit---------------------------------------------------
+
+    // const secondLang = document.querySelector();
+    const secondLang = document.querySelector("li:nth-child(2)");
+    console.log(secondLang);
+
+    // secondLang.innerHTML= "C"
+    // secondLang.textContent= "C"
+
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replaceWith(newli);
+
+
+</script>
+</html>

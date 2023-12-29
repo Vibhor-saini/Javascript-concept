@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    
+    function myFunction() {
+        const carName = "Volvo";
+        let text = "Inside: " + typeof carName + " " + carName; 
+        document.getElementById("demo1").innerHTML = text;
+    }
+
+    function second(){
+        const carName = "BMW";
+        let text = "Outside: " + typeof carName + carName;
+        document.getElementById("demo2").innerHTML = text;
+
+    }
+    
+    // myFunction();
+    // second();
+</script>
+
+</body>
+</html>

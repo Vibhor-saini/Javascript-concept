@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Advance</title>
+</head>
+<style>
+     body{
+            background-color: rgb(63, 39, 39);
+        }
+</style>
+<body>    
+</body>
+<script>
+const div = document.createElement('div');
+console.log(div);
+div.className = "main"
+div.id = Math.round(Math.random() * 10) ;
+div.setAttribute("title" , "Hello vbhor")
+div.style.backgroundColor="red";
+div.style.padding="32px";
+
+
+      div.innerText="Hello shivangi";
+      document.body.appendChild(div);
+
+        const addText = document.createTextNode("Hello himanshu");
+        div.appendChild(addText);
+        document.body.appendChild(div);
+
+    //     element.textContent = "Hello Vibhor";
+    //     document.body.appendChild(element);
+    //    var element = document.createElement("h1");
+
+
+</script>
+</html>

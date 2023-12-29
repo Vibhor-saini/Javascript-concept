@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+         body{
+            background-color: black;
+        }
+         .parent{
+            color: white;
+        } 
+    </style>
+</head>
+<body>
+
+   <div class="parent">
+       <!-- this is comment  -->
+       <div class="day">Monday</div>
+       <div class="day">Tuesday</div>
+       <div class="day">Wednesday</div>
+       <div class="day">Thursday</div>
+       <div class="day">Friday</div>
+       <div class="day">Saturday</div>
+   </div>
+
+
+    <!-- <div class="bg-black">
+
+        <h1 id="title" class="heading">Welcome Vibhor Saini <span style= "display:none">How are you</span></h1>
+        <h2 >Welcome Vibhor Saini How are you</h1>
+        <h2 >Welcome Vibhor Saini How are you</h1>
+        <h2 >Welcome Vibhor Saini How are you</h1>
+        <input type="password" name="" id="">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li class="ist-item">two</li>
+            <li class="ist-item">one</li>
+            <li class="ist-item">three</li>
+            <li class="ist-item">four</li>
+        </ul>
+    </div> -->
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[2]);
+    // console.log(parent.children[2].innerText);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);      
+    // }
+
+    parent.children[1].style.color="red"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // const dayone = document.querySelector(".day")
+    // console.log(dayone);
+    // console.log(dayone.parentElement);
+    // console.log(dayone.nextElementSibling);
+
+    console.log("Nodes: " , parent.childNodes);
+
+
+
+
+</script>
+</html>
